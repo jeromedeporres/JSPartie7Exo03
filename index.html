@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>JSP7Exo03</title> 
+    </head>
+    <body>
+        <form>
+                <fieldset>
+                    <legend>Multiplication</legend>             
+                    <label for="NBR1">NBR1</label><input type="text" name="NBR1" id="NBR1" />
+                    <label for="NBR2">NBR2<label><input type="text" name="NBR2" id="NBR2" />    
+                    <input type="button" onClick="multiplyBy(NBR1, NBR2)" Value="Multiplier"/><input type="reset" value="Reset" />    
+                    <p>Résultat :<span id = "résultat"></span></p>           
+                </fieldset>
+        </form>
+            <script>
+                var multiplyBy = (NBR1, NBR2) => {
+                    NBR1 = document.getElementById('NBR1').value;
+                    NBR2 = document.getElementById('NBR2').value;
+                    document.getElementById('résultat').innerHTML = NBR1 * NBR2;
+                }
+            </script>      
+    </body>
+</html>
